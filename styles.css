@@ -2,8 +2,9 @@
 /* One style is provided as example. */
 
 body {
-  background-image: url('images/hard-paper-texture.jpg');
+  background-image: url('images/sand.jpg');
   font-family: serif;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,44 +12,73 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header.page-header {
-  background: lightblue;
   padding: 2rem;
+  position:relative;
+  bottom: 10px;
+  right: 5px;
+  background-color: rgba(215,127,46,0.4);
 }
 .page-header h1 {
   margin-bottom: 0;
+  font-size: 4em;
 }
 .page-header p {
-  margin-top: 0;
+  margin-top: 2;
+  position: relative;
+  left: 10px;
 }
 .page-header small {
   font-size: large;
 }
 aside.more-info {
   background: lightgray;
+  position: fixed;
+  top: 100px;
+  left: 675px;
+  font-size: 90%;
+  border-radius: 25px;
+}
+aside.more-info h2 {
+  text-align: center;
 }
 aside.more-info img {
-  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
   height: auto;
 }
 a:-webkit-any-link {
   text-decoration: none;
+  line-height: 1.5;
 }
 a {
-  color: darkgreen;
+  color: darkred;
 }
 a:hover {
   color: blue;
 }
-section#content {
-  background: lightblue;
+.social-links li {
+  display: inline-block;
+  width: 10em;
 }
 .poem {
+  first-letter: bold;
   list-style-type: none;
 }
 .poem li {
-  font-size: large;
+  font-size: 150%;
   line-height: 1.8;
 }
+.poem li:first-child:first-letter {
+  font-weight: bold;
+  font-size: 140%;
+}
+footer.content-footer {
+  background: tan;
+  text-indent: 40px;
+}
 footer.page-footer {
-  background: lightgray;
+  background: tan;
+  padding: 1em;
 }
